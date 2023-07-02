@@ -1,0 +1,43 @@
+.mr-10 {
+    margin-right: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.add-new {
+    // display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.sort-header {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+
+    span {
+        i {
+            font-size: 12px;
+            cursor   : pointer;
+            padding  : 0 2px;
+        }
+    }
+}
+
+.team-button {
+    display: flex;
+    gap    : 10px;
+}
+
+.customize-table {
+
+    overflow-x: auto;
+
+}
+
+.pagination {
+   justify-content: center;
+}

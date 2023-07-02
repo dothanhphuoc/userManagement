@@ -1,0 +1,100 @@
+.login-container {
+
+   display       : flex;
+   flex-direction: column;
+   margin        : 0 auto;
+   padding-top   : 30px;
+
+   .title {
+      text-align : center;
+      font-size  : 18px;
+      font-weight: 700;
+   }
+
+   .text {
+      font-weight: 600;
+      padding-top: 5px;
+      font-size  : 15px;
+   }
+
+   input {
+      padding      : 8px 5px;
+      font-size    : 15px;
+      outline      : none;
+      border       : 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+
+      &::placeholder {
+         font-size: 14px;
+      }
+
+      &:hover {
+         background-color: #fff7f7;
+         box-shadow      : 0px 0px 11px -1px rgba(127, 117, 49, 0.4);
+
+      }
+   }
+
+   .input-password {
+      position: relative;
+
+      .password {
+         width: 100%;
+      }
+
+      .eye {
+         position : absolute;
+         top      : 42%;
+         transform: translateY(-50%);
+         right    : 10px;
+         cursor   : pointer;
+      }
+   }
+
+
+
+
+
+
+
+   button {
+      padding         : 5px;
+      border          : none;
+      border-radius   : 5px;
+      background-color: #757575;
+
+      &.active {
+         background-color: #fe2c55;
+         color           : white;
+      }
+   }
+
+   button[disabled=disabled],
+   button:disabled {
+      cursor: not-allowed;
+   }
+
+   .back {
+      text-align : center;
+      margin-top : 20px;
+      font-size  : 13px;
+      font-weight: 500;
+      cursor     : pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      
+      i {
+         margin-right: 5px;
+         font-size   : 12px;
+      }
+      
+      a {
+         padding: 0;
+         color: #000;
+       }
+   }
+}
